@@ -51,7 +51,7 @@ class MainWindow(QMainWindow):
 		back_btn = QAction("Back", self) 
 
 		# setting status tip 
-		back_btn.setStatusTip("Back to previous page") 
+		back_btn.setStatusTip("write your own message in line 54") 
 
 		# adding action to back button 
 		# making current tab to go back 
@@ -62,7 +62,7 @@ class MainWindow(QMainWindow):
 
 		# similarly adding next button 
 		next_btn = QAction("Forward", self) 
-		next_btn.setStatusTip("Forward to next page") 
+		next_btn.setStatusTip("write your own message in line 65") 
 		next_btn.triggered.connect(lambda: self.tabs.currentWidget().forward()) 
 		navtb.addAction(next_btn) 
 
@@ -74,7 +74,7 @@ class MainWindow(QMainWindow):
 
 		# creating home action 
 		home_btn = QAction("Home", self) 
-		home_btn.setStatusTip("Go home") 
+		home_btn.setStatusTip("write your own message in line 77") 
 
 		# adding action to home button 
 		home_btn.triggered.connect(self.navigate_home) 
@@ -94,7 +94,7 @@ class MainWindow(QMainWindow):
 
 		# similarly adding stop action 
 		stop_btn = QAction("Stop", self) 
-		stop_btn.setStatusTip("Stop loading current page") 
+		stop_btn.setStatusTip("write your own message in line 97") 
 		stop_btn.triggered.connect(lambda: self.tabs.currentWidget().stop()) 
 		navtb.addAction(stop_btn) 
 
@@ -105,7 +105,7 @@ class MainWindow(QMainWindow):
 		self.show() 
 
 		# setting window title 
-		self.setWindowTitle("masala palli") 
+		self.setWindowTitle("go to line 108 to change this") 
 
 	# method for adding new tab 
 	def add_new_tab(self, qurl = None, label ="Blank"): 
